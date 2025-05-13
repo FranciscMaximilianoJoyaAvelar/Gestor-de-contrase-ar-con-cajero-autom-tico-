@@ -1,0 +1,21 @@
+## 📘 Manual de Variables del Proyecto
+
+| Variable         | Tipo       | Descripción                                                                 |
+|------------------|------------|------------------------------------------------------------------------------|
+| `saldo`          | `int`      | Representa el saldo disponible en el cajero. Se modifica al retirar o depositar. |
+| `intentos`       | `int`      | Cuenta los intentos fallidos al ingresar el PIN. Se bloquea tras 3 errores. |
+| `pin_correcto`   | `str` / `None` | Almacena el PIN generado aleatoriamente para compararlo con el del usuario. |
+| `numeros`        | `str`      | Cadena de dígitos del 0 al 9 usada para generar un PIN aleatorio.           |
+| `pin`            | `str`      | PIN generado aleatoriamente con 4 dígitos.                                  |
+| `cantidad`       | `float`    | Monto introducido por el usuario para depósito o retiro.                    |
+| `pin_window`     | `tk.Toplevel` | Ventana emergente donde se solicita ingresar el PIN.                     |
+| `pin_entry`      | `tk.Entry` | Campo de entrada para que el usuario escriba su PIN (oculto con "*").      |
+
+---
+
+### 🔁 Variables globales
+
+Las siguientes variables son usadas y modificadas por varias funciones mediante la palabra clave `global`:
+
+- `saldo`
+- `intentos`
